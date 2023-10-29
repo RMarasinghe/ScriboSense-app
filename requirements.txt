@@ -7,7 +7,7 @@ transformers
 streamlit_option_menu
 plotly
 sentencepiece
-sklearn
+scikit-learn
 textblob
 rouge
 inflect
