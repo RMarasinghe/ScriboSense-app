@@ -2,7 +2,7 @@ pyrebase
 torch
 joblib
 transformers
-streamlit_option_menu
+streamlit-option-menu
 plotly
 sentencepiece
 scikit-learn
