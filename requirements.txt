@@ -10,7 +10,6 @@ sentencepiece
 sklearn
 textblob
 rouge
-string
 re
 inflect
 keras
