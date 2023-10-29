@@ -116,8 +116,6 @@ rouge
 rsa
 sacremoses
 scikit-learn
-scipy
-seaborn
 semver
 Send2Trash
 sentencepiece
