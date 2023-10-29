@@ -123,7 +123,6 @@ Send2Trash
 sentencepiece
 six
 smmap
-statsmodels
 streamlit-extras
 streamlit-option-menu
 tenacity
