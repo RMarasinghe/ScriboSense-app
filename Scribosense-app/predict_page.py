@@ -30,7 +30,7 @@ from tensorflow.keras.models import load_model
 import sys
 import path
 
-
+nltk.data.path.append("/mount/src/scribosense-app/Scribosense-app")
 
 #----------------- Content prediction ----------------------------------------------------------------------------
 
