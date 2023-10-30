@@ -27,6 +27,8 @@ from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.models import load_model
 
 # from transformers import GPT2Tokenizer, GPT2LMHeadModel
+import sys
+import path
 
 
 
@@ -67,8 +69,16 @@ from tensorflow.keras.models import load_model
 
 def predict_content(prompt_q,prompt_title,prompt_text,summary_in):
     #open the model
-    with open('v2.pickle', 'rb') as f:
+    dir = path.Path(__file__).abspath()
+    sys.path.append(dir.parent.parent)
+
+    path_to_model = './v2.pickle'
+
+    with open(path_to_model, 'rb') as f:
         model = pickle.load(f)
+    
+    # with open('v2.pickle', 'rb') as f:
+    #     model = pickle.load(f)
 
     # Regular expression pattern to find numbers in the text
     pattern = r'\d+(\.\d+)?'
@@ -271,8 +281,13 @@ def predict_wording(prompt_q,prompt_title,prompt_text,summary_in,content_score):
     #     model = pickle.load(f)
     
     
+    dir = path.Path(__file__).abspath()
+    sys.path.append(dir.parent.parent)
 
-    model = load_model('wNN_3.h5')
+    path_to_model = './wNN_3.h5'
+
+    model = load_model(path_to_model)
+    # model = load_model('wNN_3.h5')
 
     # Preprocessing
     # --------------------------------------------------
