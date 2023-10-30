@@ -1,5 +1,6 @@
 streamlit
 pyrebase
+pyrebase4
 torch
 joblib
 transformers
