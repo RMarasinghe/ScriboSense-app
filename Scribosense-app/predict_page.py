@@ -407,7 +407,7 @@ def predict_wording(prompt_q,prompt_title,prompt_text,summary_in,content_score):
     preprocessed_input = preprocessing(input)
     feature_vals = calculate_features(preprocessed_input,content)
     wording = get_content_score(feature_vals.drop(columns=['prompt_question','prompt_title','prompt_text','summary']))
-    return wording[0]
+    return float(wording[0])
 
 
 #-----------------------------------------------------------------------------------------------------------------------------------
