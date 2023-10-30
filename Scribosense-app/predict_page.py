@@ -205,7 +205,7 @@ def predict_content(prompt_q,prompt_title,prompt_text,summary_in):
     data = {'prompt_question': [prompt_question], 'prompt_title': [prompt_title], 'prompt_text': [prompt_txt], 'summary': [summary]}
     input = pd.DataFrame(data)
     preprocessed_input = preprocessing(input)
-    generated_summ = pd.read_csv('generated_summary.csv')
+    generated_summ = pd.read_csv('/mount/src/scribosense-app/Scribosense-app/generated_summary.csv')
 
     if prompt_title == 'on tragedy' and prompt_question== "summarize at least three elements of an ideal tragedy as described by aristotle":
         item_to_extract = generated_summ.at[0, 'generated_summary']
