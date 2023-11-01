@@ -10,6 +10,8 @@ import pyrebase
 from dashboard import show_dashboard
 # from pages.Login import logout
 
+st.set_page_config(page_title="Summary Evaluator")
+
 # ------------Load the models-----------------------------------------
 # model_data = joblib.load("wording_model_2/wording_regressor_model.pkl")
 
